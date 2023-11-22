@@ -33,8 +33,6 @@ jobs:
         uses: docker/setup-buildx-action@v3
       - name: Build and push
         uses: docker/build-push-action@v5
-      - name: Build and push Docker image
-        uses: docker/build-push-action@v5
         with:
           context: .  # Use the current directory as the build context
           file: ./Dockerfile  # Specify the path to your Dockerfile
